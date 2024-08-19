@@ -19,23 +19,26 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
-            }
-          }
+              },
+              fontFamily: {
+                 manrope:['Manrope','system-ui'],
+              },
+            },
+          },
         }
       </script>
 </head>
-<body class="manrope-font">
+<body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <!-- header section -->
          <header class="lg:flex md:flex pt-10 mb-20">
             <!-- text content -->
             <div>
-               <h1 class="text-5xl md:text-7xl">It's good<br> tea time at The<br> Tea House</h1>
+               <h1 class="text-5xl md:text-7xl font-bold">It's good<br> tea time at The<br> Tea House</h1>
                <br />
                 <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
                 <br />
-                <button class="text-white text-2xl font-bold px-5 py-3 rounded-xl bg-gradient-to-r from-[#FF0000] to-[#FF8938] ">Explore More <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></button>
+                <button onclick="welcome()" class="text-white text-2xl font-bold px-5 py-3 rounded-xl bg-gradient-to-r from-[#FF0000] to-[#FF8938] ">Explore More <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i></button>
             </div>
             <!-- img content -->
             <div class="relative">
@@ -53,6 +56,15 @@
                      </div>
                     </div>
             </div>
+            <script>
+               alert("welcome to my Restaurent");
+               function welcome(){
+                  alert("code : SUMMER15");
+                  var name = prompt("Please tell me your name");
+                  alert("Hello " + name);
+                  console.log("Your Name is" + name);
+               }
+            </script>
          </header>
          <!-- Features Product Section -->
           <section class="py-8 lg:py-24">
